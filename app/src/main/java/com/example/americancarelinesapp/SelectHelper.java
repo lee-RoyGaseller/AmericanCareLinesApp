@@ -14,8 +14,4 @@ public class SelectHelper extends AppCompatActivity {
         setContentView(R.layout.activity_select_helper);
 
     }
-    public void moveOn(View v) {
-        Intent intent = new Intent(this, ChooseServicesActivity.class);
-        startActivity(intent);
-    }
 }

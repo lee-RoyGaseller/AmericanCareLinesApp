@@ -1,5 +1,6 @@
 package com.example.americancarelinesapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -44,7 +45,11 @@ public class ChooseServicesActivity extends AppCompatActivity {
 //        checkIn = findViewById(R.id.cb_checkIn);
         total = 0;
         tv = findViewById(R.id.tv_intTotal);
-        tv.setText(String.valueOf(total));
+        tv.setText("Total: " + String.valueOf(total));
+    }
+    public void moveOn(View v) {
+        Intent intent = new Intent(this, SelectHelper.class);
+        startActivity(intent);
     }
 
 
@@ -57,7 +62,7 @@ public class ChooseServicesActivity extends AppCompatActivity {
             total -= 0;
         }
 
-        tv.setText(String.valueOf(total));
+        tv.setText("Total: " + String.valueOf(total));
     }
 
     public void checkLuggage(View v) {
@@ -69,7 +74,7 @@ public class ChooseServicesActivity extends AppCompatActivity {
             total -= 10;
         }
 
-        tv.setText(String.valueOf(total));
+        tv.setText("Total: " + String.valueOf(total));
     }
 
     public void checkCarry(View v) {
@@ -81,7 +86,7 @@ public class ChooseServicesActivity extends AppCompatActivity {
             total -= 7;
         }
 
-        tv.setText(String.valueOf(total));
+        tv.setText("Total: " + String.valueOf(total));
     }
 
     public void checkBuddy(View v) {
@@ -93,7 +98,7 @@ public class ChooseServicesActivity extends AppCompatActivity {
             total -= 20;
         }
 
-        tv.setText(String.valueOf(total));
+        tv.setText("Total: " + String.valueOf(total));
     }
 
 //    public void checkToPre(View v) {

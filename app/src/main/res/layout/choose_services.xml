@@ -1,26 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginBottom="25dp"
     android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Services"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:textColor="#000000"/>
     <CheckBox android:id="@+id/cb_wheelchair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Wheelchair Assistance"
+        android:textSize="18dp"
+        android:paddingBottom="5dp"
         android:onClick="checkWheel"/>
     <CheckBox android:id="@+id/cb_luggage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Luggage Assistance"
+        android:paddingBottom="5dp"
+        android:textSize="18dp"
         android:onClick="checkLuggage"/>
     <CheckBox android:id="@+id/cb_carryon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Carry On Assistance"
+        android:paddingBottom="5dp"
+        android:textSize="18dp"
         android:onClick="checkCarry"/>
     <CheckBox android:id="@+id/cb_buddy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:textSize="18dp"
         android:text="Airport Buddy"
+        android:layout_gravity=""
         android:onClick="checkBuddy"/>
 <!--    <CheckBox android:id="@+id/cb_toPre"-->
 <!--        android:layout_width="wrap_content"-->
@@ -52,5 +73,15 @@
         android:id="@+id/tv_intTotal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="20dp"
         android:text="" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginTop="20dp"
+        android:onClick="moveOn"
+        android:layout_gravity="center"/>
 </LinearLayout>
