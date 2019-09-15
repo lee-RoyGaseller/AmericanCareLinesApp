@@ -9,15 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SelectHelper"></activity>
-        <activity android:name=".EnterFlightNumber"><intent-filter>
+        <activity android:name=".AppInfo3"></activity>
+        <activity android:name=".AppInfo2" />
+        <activity android:name=".AppInfo1"><intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".SelectHelper" />
+        <activity android:name=".EnterFlightNumber">
 
         </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
