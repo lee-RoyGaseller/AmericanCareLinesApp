@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".AppInfo3"></activity>
         <activity android:name=".AppInfo2" />
+        <activity android:name=".ChooseServicesActivity"/>
         <activity android:name=".AppInfo1"><intent-filter>
             <action android:name="android.intent.action.MAIN" />
 

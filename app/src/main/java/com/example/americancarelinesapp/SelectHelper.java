@@ -2,7 +2,9 @@ package com.example.americancarelinesapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class SelectHelper extends AppCompatActivity {
 
@@ -11,5 +13,9 @@ public class SelectHelper extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_helper);
 
+    }
+    public void moveOn(View v) {
+        Intent intent = new Intent(this, ChooseServicesActivity.class);
+        startActivity(intent);
     }
 }

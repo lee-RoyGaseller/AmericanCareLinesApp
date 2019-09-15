@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <CheckBox android:id="@+id/cb_wheelchair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wheelchair Assistance"
+        android:onClick="checkWheel"/>
+    <CheckBox android:id="@+id/cb_luggage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luggage Assistance"
+        android:onClick="checkLuggage"/>
+    <CheckBox android:id="@+id/cb_carryon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carry On Assistance"
+        android:onClick="checkCarry"/>
+    <CheckBox android:id="@+id/cb_buddy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Airport Buddy"
+        android:onClick="checkBuddy"/>
+<!--    <CheckBox android:id="@+id/cb_toPre"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="To Pre-check"-->
+<!--        android:onClick="checkToPre"/>-->
+<!--    <CheckBox android:id="@+id/cb_fromPre"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="From Pre-check"-->
+<!--        android:onClick="checkFromPre"/>-->
+<!--    <CheckBox android:id="@+id/cb_toGate"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="To Gate"-->
+<!--        android:onClick="checkToGate"/>-->
+<!--    <CheckBox android:id="@+id/cb_fromGate"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="From Gate"-->
+<!--        android:onClick="checkFromGate"/>-->
+<!--    <CheckBox android:id="@+id/cb_checkIn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Check In"-->
+<!--        android:onClick="checkCheck"/>-->
+
+    <TextView
+        android:id="@+id/tv_intTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+</LinearLayout>
